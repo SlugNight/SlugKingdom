@@ -1,0 +1,195 @@
+
+body {
+  background-color: rgb(233, 252, 217);
+  color: rgb(174, 0, 204);
+  font-family: Impact, Haettenschweiler;
+  text-align: center;
+  align-content: center;
+  font-size: 19px;
+}
+
+body a{
+  color:#004762
+}
+/*--------
+ * ----------------------------*/
+/*---------------COLUMNS--------------*/
+/*------------------------------------*/
+
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    box-sizing: border-box;
+    padding-left: 100px;
+    background-color:pink;
+}
+
+
+/*------------------------------------*/
+/*-----------Content-AREAS------------*/
+/*------------------------------------*/
+
+.outer {
+  width: 900px;
+  height: 300px;
+  border: 2px solid #21556E;
+  padding: 6px;
+  margin: auto;
+  background-color: rgb(119, 160, 144);
+  z-index: 2;
+  position: relative;
+}
+
+.main {
+  border: 2px solid #21556E;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 60%;
+  background: rgba(147, 203, 119, 0.72);
+  
+
+}
+
+.newEntry{
+  border: 2px solid #21556E;
+  display: flex;
+  box-sizing: border-box;
+  background: #B6D2A8;
+  justify-content: center;
+  width: 472px;
+  margin-left: 300px;
+  margin-top: 5px;
+}
+
+.newEntry a {
+  width: 472px;  
+  height: 30px;
+  padding-top:8px;
+}
+
+/* Change the color of links on hover */
+.newEntry a:hover {
+  background-color: #f1fae3;
+  color: black;
+
+}
+
+.left {
+  float:left;
+  vertical-align: top;
+  width: 186px;
+  position: relative;
+}
+
+.menu {
+  border: 2px solid #21556E;
+  display: inline-block;
+  vertical-align: top;
+  height: 282px;
+  box-sizing: border-box;
+  background-color: #B6D2A8;
+  margin-bottom: 12px;
+  padding-top: 0;
+  width: 176px;
+  text-align: center;
+}
+
+
+/*------------------------------------*/
+/*-----------Area-STYLES--------------*/
+/*------------------------------------*/
+
+
+/* LIBRARY CLASSES */
+.paratext p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 120%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.LibraryList {
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Record Station CLASSES */
+.RecordStationTitle {
+    margin-top: 25px;
+    margin-bottom: -5px;
+    color: black;
+    text-align: center;
+    font-family: 'agora-webfont', monospace;
+    font-size: 130px;
+    text-shadow: 3px 5px 2px #ff8a5c, -4px -2px 2px #ff8a5c, 2px -2px 2px #ff8a5c, -5px 5px 3px #ff8a5c;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    width: 1800px;
+}
+
+/* Garden CLASSES */
+.PlantText {
+  background: linear-gradient(to left, #9f94ffd4 0%, #d9b0ffd4 100%);
+}
+
+.PlantOuterBox {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.PlantBox {
+    width: 200px;
+    height: 250px;
+    max-width: 20.5em;
+    max-height: 20.5em;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    margin: 0.375em;
+    border-radius: 0.25em;
+    box-shadow: 1px 3px 5px rgba(10, 20, 30, 0.5);
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+    font-family: "70s_disco_personal_usebold";
+
+}
+.DiscoHeading{
+    margin-top: 25px;
+    margin-bottom: -5px;
+    color: black;
+    text-align: center;
+    font-family: "70s_disco_personal_usebold";
+    font-size: 40px;
+    text-shadow: 3px 5px 2px #635cff, -4px -2px 2px #ff5cec, 2px -2px 2px #ff8a5c, -5px 5px 3px #ff8a5c;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}    
+/*-----------------------------
+ * ------------Fonts----------
+ * --------------------------*/
+
+@font-face {
+    font-family: '70s_disco_personal_usebold';
+    src: url('/Fonts/70sDisco/70sdiscopersonalusebold-w14z2-webfont.woff2') format('woff2'),
+         url('/Fonts/41sDisco/70sdiscopersonalusebold-w14z2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.InsideClub {
+    background-color: rgba(255, 20, 147, 0.59);
+    color: rgb(0, 255, 60);
+    font-family:"70s_disco_personal_usebold";
+  }

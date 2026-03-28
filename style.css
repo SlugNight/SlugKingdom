@@ -1,0 +1,256 @@
+
+body {
+  background-color: #e9fcd9;
+  color: green;
+  font-family: Courier;
+  text-align: center;
+  align-content: center;
+  font-size: 19px;
+}
+
+/*------------------------------------*/
+/*---------------COLUMNS--------------*/
+/*------------------------------------*/
+
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    box-sizing: border-box;
+    padding-left: 100px;
+    background-color:pink;
+}
+
+
+/*------------------------------------*/
+/*-----------Content-AREAS------------*/
+/*------------------------------------*/
+
+.outer {
+  width: 900px;
+  height: 300px;
+  border: 2px solid #21556E;
+  padding: 6px;
+  margin: auto;
+  background-color: #77A090;
+  z-index: 2;
+  position: relative;
+}
+
+.main {
+  border: 2px solid #21556E;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 709px;
+  background: #B6D2A8;
+
+}
+
+.newEntry{
+  border: 2px solid #21556E;
+  display: flex;
+  box-sizing: border-box;
+  background: #B6D2A8;
+  justify-content: center;
+  width: 472px;
+  margin-left: 300px;
+  margin-top: 5px;
+}
+
+.newEntry a {
+  width: 472px;  
+  height: 30px;
+  padding-top:8px;
+}
+
+/* Change the color of links on hover */
+.newEntry a:hover {
+  background-color: #f1fae3;
+  color: black;
+
+}
+
+.left {
+  float:left;
+  vertical-align: top;
+  width: 186px;
+  position: relative;
+}
+
+.menu {
+  border: 2px solid #21556E;
+  display: inline-block;
+  vertical-align: top;
+  height: 282px;
+  box-sizing: border-box;
+  background-color: #B6D2A8;
+  margin-bottom: 12px;
+  padding-top: 0;
+  width: 176px;
+  text-align: center;
+}
+
+.frame {
+/* border-image: url('Images/Borders/Bordertest1.png') 93 92 87 92 stretch stretch;  */  
+/*  border-color: #e9fcd9;*/
+/*  border-style: inset; */
+/*  border-width: 60px; */
+  display: block;
+  width: 40%;
+  height: auto;
+  background-color: #e9fcd9;
+  margin: 0 auto;
+  border-image-repeat: stretch;
+}
+
+
+/*------------------------------------*/
+/*--------------NAV-BAR---------------*/
+/*------------------------------------*/
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 650px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*------------------------------------*/
+/*-----------Area-STYLES--------------*/
+/*------------------------------------*/
+
+
+/* LIBRARY CLASSES */
+.paratext p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 120%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.LibraryList {
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Record Station CLASSES */
+.RecordStationTitle {
+    margin-top: 25px;
+    margin-bottom: -5px;
+    color: black;
+    text-align: center;
+    font-family: 'agora-webfont', monospace;
+    font-size: 130px;
+    text-shadow: 3px 5px 2px #ff8a5c, -4px -2px 2px #ff8a5c, 2px -2px 2px #ff8a5c, -5px 5px 3px #ff8a5c;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    width: 1800px;
+}
+
+/* Garden CLASSES */
+.PlantText {
+  background: linear-gradient(to left, #9f94ffd4 0%, #d9b0ffd4 100%);
+}
+
+.PlantOuterBox {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.PlantBox {
+    width: 200px;
+    height: 250px;
+    max-width: 20.5em;
+    max-height: 20.5em;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    margin: 0.375em;
+    border-radius: 0.25em;
+    box-shadow: 1px 3px 5px rgba(10, 20, 30, 0.5);
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+
+/* Garage CLASSES */
+.GarageMain {
+  background-color: rgb(170, 121, 57);
+  color:rgb(85, 49, 0);
+  text-align: center;
+  line-height: 120%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-image:url(/Images/Backgrounds/GarageBackground.jpg);
+}
+.GarageText {
+  background-color: rgba(201, 144, 66, 0.44);
+}
+
+.GarageMain a {
+  color: #ffc182
+}
+    /* Add a color to the active/current link */
+.GarageMain .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.GarageImages {
+    max-width: 20.5em;
+    max-height: 20.5em;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 0.25em;
+    box-shadow: 1px 3px 1px 5px rgba(75, 32, 0, 0.38);
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+    display:flex;
+    margin: auto;
+}
+
+.GarageHeader {
+  padding-bottom: 0%;
+}
+
+.GarageHeader H2 {
+  border-block-end-style: double;
+  margin-bottom: 0;
+}
+
+.GarageHeader H3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
